@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stop Watch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styling.css">
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!----title--->
+  <div class="container-fluid"> 
+    <div class="header">Stopwatch</div>
+  
+
+  <!----lap time--->
+  <div id="Lap">
+    <span id="lapMin">00</span>:<span id="lapSec">00</span>:<span id="lapcentisec">00</span>
+  </div>
+
+  <!----time--->
+  <div id="time">
+    <span id="timeMin">00</span>:<span id="timeSec">00</span>:<span id="timecentisec">00</span>
+  </div>
+
+  <!----control--->
+  <div id="controlsContainer" class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <div class="control" id="startButton">
+        Start
+      </div>
+      <div class="control" id="stopButton">
+        Stop
+      </div>
+      <div class="control" id="resumeButton">
+        Resume
+      </div>
+    </div>
+    <div class="col-xs-2 ">
+      <div class="control" id="lapButton">
+        Lap
+      </div>
+      <div class="control" id="resetButton">
+        Reset
+      </div>
+      
+    </div>
+  </div>
+  <!----Laps--->
+  <div id="Laps">
+
+  </div>
+  
+</div>
+<script src="stopwatch.js"></script>
+</body>
+</html>
